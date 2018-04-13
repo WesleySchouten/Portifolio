@@ -45,7 +45,7 @@
 </form>
 </div>
   <div class="col-sm-6">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.4430187951793!2d5.8042579999999875!3d51.46838200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c73c628576a9ad%3A0x70e3267675de59f1!2sWesleySchoutenICT!5e0!3m2!1snl!2snl!4v1434709632404"></iframe>
+  
     <br>
     <br>
 

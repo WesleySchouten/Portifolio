@@ -1,6 +1,48 @@
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:700';
+body  {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+}
+.jumbotron {
+  text-align:  center;
+  height: 100px;
+  background-color: lightblue;
+}
+.display-4 {
+font-size: 20px;
+
+}
+.nav-tabs {
+  margin-top: -32px;
+}
+.d-block  {
+width: 100%;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 400px;
+}
+
+
+.carousel-item img {
+  height: 300px;
+}
+.col-sm-12 {
+  text-align: center;
+}
+.col {
+  text-align: center;
+}
+p {
+  font-size: 15px;
+}
+iframe {
+  width: 600px;
+  height: 250px;
+
+}
+.col-sm-4 {
+  text-align: center;
 }
 
 * {
@@ -22,6 +64,10 @@ body {
   width: 25%;
 }
 
+.column img {
+  width: 100%;
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -37,7 +83,7 @@ body {
 }
 
 /* Modal Content */
-.modal-content {
+.modal-contentito {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -63,8 +109,12 @@ body {
   cursor: pointer;
 }
 
-.mySlides {
+.mySlides2 {
   display: none;
+}
+
+.mySlides2 img {
+  width: 100%;
 }
 
 .cursor {
@@ -72,7 +122,6 @@ body {
 }
 
 /* Next & previous buttons */
-.prev,
 .next {
   cursor: pointer;
   position: absolute;
@@ -88,7 +137,21 @@ body {
   user-select: none;
   -webkit-user-select: none;
 }
-
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -121,12 +184,12 @@ img {
   color: white;
 }
 
-.demo {
+.demo2 {
   opacity: 0.6;
 }
 
 .active,
-.demo:hover {
+.demo2:hover {
   opacity: 1;
 }
 
@@ -137,5 +200,26 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
-</style>
-<body>
+.aboutimage img {
+  width: 100%;
+}
+.centerdtext {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.aboutimage {
+  position: relative;
+    text-align: center;
+    color: white;
+}
+.footer1 {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: lightblue;
+   color: white;
+   text-align: center;
+ }

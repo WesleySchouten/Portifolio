@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Portifolio</title>
@@ -28,9 +29,6 @@
     <div class="carousel-item">
     <a href="CSharp.php">  <img class="d-block w-100" src="images/C.jpg" alt="Second slide"></a>
     </div>
-    <div class="carousel-item">
-      <a href="arduino.php"><img class="d-block w-100" src="images/ajpg.jpg" alt="Third slide"></a>
-    </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -44,20 +42,25 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <p>What do I do</p>
+      <p>What I do</p>
     </div>
   </div>
 </div>
 <div class="container">
   <div class="row">
     <div class="col">
-      1 of 2
+      <i class="fa fa-html5" aria-hidden="true"></i>
+        Currently most of my focus is on front-end developing working on html and css but in my free time im trying to learn Javascript and Jquerry to make the page more professional
+
     </div>
     <div class="col">
-      2 of 2
+       <i class="fa fa-cog" aria-hidden="true"></i>
+       Im also working on some projects based on C# and arduino, but we are currently at the basics of learing both things
     </div>
   </div>
 </div>
+<?php include 'inc/footer.php'; ?>
+
 
 
 

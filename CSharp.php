@@ -75,6 +75,22 @@ $sql10 = "SELECT * FROM webdev WHERE webid=9";
    $sql10 = "SELECT * FROM webdev WHERE webid=9";
 }
 
+if (isset($_GET['webid'])) {
+$sql11 = "SELECT * FROM webdev WHERE webid=10";
+} else {
+   $sql11 = "SELECT * FROM webdev WHERE webid=10";
+}
+if (isset($_GET['webid'])) {
+$sql12 = "SELECT * FROM webdev WHERE webid=11";
+} else {
+   $sql12 = "SELECT * FROM webdev WHERE webid=11";
+}
+if (isset($_GET['webid'])) {
+$sql13 = "SELECT * FROM webdev WHERE webid=12";
+} else {
+   $sql13 = "SELECT * FROM webdev WHERE webid=12";
+}
+
 
 
  ?>
@@ -87,7 +103,8 @@ $sql10 = "SELECT * FROM webdev WHERE webid=9";
 <body>
   <?php
   include 'inc/jumbo.php';
-  include 'inc/nav.php'; ?>
+  include 'inc/nav.php';
+  ?>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -188,15 +205,16 @@ $sql10 = "SELECT * FROM webdev WHERE webid=9";
         </div>
       </div>
       <div class="col">
-        <div class="lightboxper1">
+        <div class="lightboxper2">
           <div class="column">
+            Periode 2
             <?php
                  $result5 = $conn->query($sql5);
             if ($result5->num_rows > 0) {
         //output data of each row
         while ($row5 = $result5->fetch_assoc()) {
         ?>
-            <img src="<?php echo $row5['img']; ?>" onclick="openmodal2();currentslide2(1)" class="hover-shadow cursor">
+            <img src="<?php echo $row5['img']; ?>"onclick="openmodal2();currentslide2(1)" class="hover-shadow cursor">
           <?php }}  ?>
           </div>
 
@@ -209,36 +227,36 @@ $sql10 = "SELECT * FROM webdev WHERE webid=9";
             <div class="mySlides2">
               <div class="numbertext">1 / 3</div>
               <?php
-                   $result2 = $conn->query($sql2);
-              if ($result2->num_rows > 0) {
+                   $result6 = $conn->query($sql6);
+              if ($result6->num_rows > 0) {
             //output data of each row
-            while ($row2 = $result2->fetch_assoc()) {
+            while ($row6 = $result6->fetch_assoc()) {
             ?>
-              <img src="<?php echo $row2['img']; ?>">
+              <img src="<?php echo $row6['img']; ?>">
               <?php }}  ?>
             </div>
 
             <div class="mySlides2">
               <div class="numbertext">2 / 3</div>
               <?php
-                   $result3 = $conn->query($sql3);
-              if ($result3->num_rows > 0) {
+                   $result5 = $conn->query($sql5);
+              if ($result5->num_rows > 0) {
             //output data of each row
-            while ($row3 = $result3->fetch_assoc()) {
+            while ($row5 = $result5->fetch_assoc()) {
             ?>
-              <img src="<?php echo $row3['img']; ?>">
+              <img src="<?php echo $row5['img']; ?>">
               <?php }}  ?>
             </div>
 
             <div class="mySlides2">
               <?php
-                   $result4 = $conn->query($sql4);
-              if ($result4->num_rows > 0) {
+                   $result10 = $conn->query($sql10);
+              if ($result10->num_rows > 0) {
             //output data of each row
-            while ($row4 = $result4->fetch_assoc()) {
+            while ($row10 = $result10->fetch_assoc()) {
             ?>
               <div class="numbertext">3 / 3</div>
-              <img src="<?php echo $row4['img']; ?>">
+              <img src="<?php echo $row10['img']; ?>">
                     <?php }}  ?>
             </div>
             <a class="prev" onclick="plusslides2(-1)">&#10094;</a>
@@ -249,44 +267,138 @@ $sql10 = "SELECT * FROM webdev WHERE webid=9";
             </div>
             <div class="column">
               <?php
-                   $result2 = $conn->query($sql2);
-              if ($result2->num_rows > 0) {
+                   $result6 = $conn->query($sql6);
+              if ($result6->num_rows > 0) {
             //output data of each row
-            while ($row2 = $result2->fetch_assoc()) {
+            while ($row6 = $result6->fetch_assoc()) {
               ?>
-              <img class="demo2 cursor" src="<?php echo $row2['img']; ?>" onclick="currentslide2(1)" alt="Trolltunga, Norway">
+              <img class="demo2 cursor" src="<?php echo $row6['img']; ?>" onclick="currentslide2(1)" alt="<?php echo $row6['context'] ?>">
             <?php }} ?>
             </div>
           </div>
 
             <div class="column">
               <?php
-                   $result3 = $conn->query($sql3);
-              if ($result3->num_rows > 0) {
+                   $result5 = $conn->query($sql5);
+              if ($result5->num_rows > 0) {
             //output data of each row
-            while ($row3 = $result3->fetch_assoc()) {
+            while ($row5 = $result5->fetch_assoc()) {
             ?>
-              <img class="demo2 cursor" src="<?php echo $row3['img']; ?>"onclick="currentslide2(2)" alt="Nature and sunrise">
+              <img class="demo2 cursor" src="<?php echo $row5['img']; ?>"onclick="currentslide2(2)" alt="<?php echo $row5['context'] ?>">
             <?php }} ?>
             </div>
             <div class="column">
               <?php
-                   $result4 = $conn->query($sql4);
-              if ($result4->num_rows > 0) {
+                   $result10 = $conn->query($sql10);
+              if ($result10->num_rows > 0) {
             //output data of each row
-            while ($row4 = $result4->fetch_assoc()) {
+            while ($row10 = $result10->fetch_assoc()) {
             ?>
-              <img class="demo2 cursor" src="<?php echo $row4['img']; ?>" onclick="currentslide2(3)" alt="<?php echo $row4['context']; ?>">
+              <img class="demo2 cursor" src="<?php echo $row10['img']; ?>" onclick="currentslide2(3)" alt="<?php echo $row10['context']; ?>">
             <?php }} ?>
             </div>
           </div>
-          <script type="text/javascript" src="js/main1.js"></script>
+
         </div>
         </div>
 
 
       <div class="col">
-        <p>Max vd Rijt was hier </p>
+        <div class="lightboxper3">
+          <div class="column">
+            Periode 3
+            <?php
+                 $result11 = $conn->query($sql11);
+            if ($result11->num_rows > 0) {
+        //output data of each row
+        while ($row11 = $result11->fetch_assoc()) {
+        ?>
+            <img src="<?php echo $row11['img']; ?>"onclick="openModal3();currentSlide3(1)" class="hover-shadow cursor">
+          <?php }}  ?>
+          </div>
+
+
+        <div id="myModal3" class="modal">
+          <span class="close cursor" onclick="closeModal3()">&times;</span>
+
+          <div class="modal-contentito">
+
+            <div class="mySlides3">
+              <div class="numbertext">1 / 3</div>
+              <?php
+                   $result11 = $conn->query($sql11);
+              if ($result11->num_rows > 0) {
+            //output data of each row
+            while ($row11 = $result11->fetch_assoc()) {
+            ?>
+              <img src="<?php echo $row11['img']; ?>">
+              <?php }}  ?>
+            </div>
+
+            <div class="mySlides3">
+              <div class="numbertext">2 / 3</div>
+              <?php
+                   $result12 = $conn->query($sql12);
+              if ($result12->num_rows > 0) {
+            //output data of each row
+            while ($row12 = $result12->fetch_assoc()) {
+            ?>
+              <img src="<?php echo $row12['img']; ?>">
+              <?php }}  ?>
+            </div>
+
+            <div class="mySlides3">
+              <?php
+                   $result13 = $conn->query($sql13);
+              if ($result13->num_rows > 0) {
+            //output data of each row
+            while ($row13 = $result13->fetch_assoc()) {
+            ?>
+              <div class="numbertext">3 / 3</div>
+              <img src="<?php echo $row13['img']; ?>">
+                    <?php }}  ?>
+            </div>
+            <a class="prev" onclick="plusslides3(-1)">&#10094;</a>
+            <a class="next" onclick="plusslides3(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption3"></p>
+            </div>
+            <div class="column">
+              <?php
+                   $result11 = $conn->query($sql11);
+              if ($result11->num_rows > 0) {
+            //output data of each row
+            while ($row11 = $result11->fetch_assoc()) {
+              ?>
+              <img class="demo3 cursor" src="<?php echo $row11['img']; ?>" onclick="currentSlide3(1)" alt="<?php echo $row11['context'] ?>">
+            <?php }} ?>
+            </div>
+          </div>
+
+            <div class="column">
+              <?php
+                   $result12 = $conn->query($sql12);
+              if ($result12->num_rows > 0) {
+            //output data of each row
+            while ($row12 = $result12->fetch_assoc()) {
+            ?>
+              <img class="demo3 cursor" src="<?php echo $row12['img']; ?>"onclick="currentSlide3(2)" alt="<?php echo $row12['context'] ?>">
+            <?php }} ?>
+            </div>
+            <div class="column">
+              <?php
+                   $result13 = $conn->query($sql13);
+              if ($result13->num_rows > 0) {
+            //output data of each row
+            while ($row13 = $result13->fetch_assoc()) {
+            ?>
+              <img class="demo3 cursor" src="<?php echo $row13['img']; ?>" onclick="currentSlide3(3)" alt="<?php echo $row13['context']; ?>">
+            <?php }} ?>
+            </div>
+          </div>
+          <script type="text/javascript" src="js/main1.js"></script>
+        </div>
         </div>
         </div>
       </div>
